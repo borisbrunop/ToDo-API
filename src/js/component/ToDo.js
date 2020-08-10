@@ -1,7 +1,7 @@
 import React from "react";
 
 function ToDo({ task, index, todos, userName, getTodos, baseUrl }) {
-	// ----------------------------------------DELETE TASK PUT-----------------------------------------------
+	// ----------------------------------------DELETE TASK method PUT-----------------------------------------------
 
 	function handleRemoveTodo(e, index) {
 		let taskLeft = todos.filter((todo, i) => i != index);

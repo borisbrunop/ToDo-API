@@ -8,7 +8,7 @@ import TaskList from "./TaskList";
 export function Home() {
 	const [todos, setTodos] = useState([]);
 
-	//--------------------------------------------FETCH GET---------------------------------------------------------
+	//--------------------------------------------FETCH method GET---------------------------------------------------------
 
 	const [userName, setUserName] = useState("");
 
@@ -42,7 +42,7 @@ export function Home() {
 		}
 	}
 
-	//-------------------------------------CREATE USER POST----------------------------------------------------
+	//-------------------------------------CREATE USER method POST----------------------------------------------------
 
 	const createUser = async username => {
 		const response = await fetch(`${baseUrl}/user/${username}`, {
@@ -65,7 +65,7 @@ export function Home() {
 		}
 	};
 
-	//----------------------------------UPDATE TASK PUT---------------------------------------------------
+	//----------------------------------UPDATE TASK method PUT---------------------------------------------------
 
 	const [task, setTask] = useState([
 		{
@@ -95,7 +95,7 @@ export function Home() {
 		}
 	};
 
-	//-------------------------------DELETE---------------------------------------------------------------
+	//-------------------------------DELETE USER method DELETE---------------------------------------------------------------
 
 	const deleteTodo = async username => {
 		const response = await fetch(`${baseUrl}/user/${username}`, {
